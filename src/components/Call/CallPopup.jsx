@@ -27,7 +27,7 @@ export default function CallPopup({userId}){
 
     });
 
-  },[userId]);
+  },[userId,ringtone]);
 
   const acceptCall = ()=>{
 
