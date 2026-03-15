@@ -22,7 +22,7 @@ export default function ChatList() {
 
     if (!myId) return;
 
-    socket = io("https://whatsapp-backend-87dn.onrender.com/");
+    socket = io("https://whatsapp-backend-87dn.onrender.com");
 
     socket.emit("joinRoom", myId);
 

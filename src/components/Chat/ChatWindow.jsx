@@ -24,7 +24,7 @@ export default function ChatWindow() {
 
     if (!myId) return;
 
-    socket = io("http://localhost:5000");
+    socket = io("https://whatsapp-backend-87dn.onrender.com");
 
     socket.emit("joinRoom", myId);
 
