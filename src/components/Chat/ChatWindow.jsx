@@ -8,6 +8,7 @@ export default function ChatWindow() {
   const { user } = useContext(AuthContext);
   const { contactId } = useParams();
   const myId = user?.user?._id;
+  const myName = user?.user?.name;
 
   const [messages, setMessages] = useState([]);
   const [text, setText] = useState("");
@@ -89,7 +90,7 @@ export default function ChatWindow() {
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-gray-500"></div>
           <div>
-            <div className="font-semibold">Chat</div>
+            <div className="font-semibold">Chat with {myName}</div>
             <div className="text-xs text-gray-400">online</div>
           </div>
         </div>
